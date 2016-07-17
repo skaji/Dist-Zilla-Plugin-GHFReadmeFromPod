@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/skaji/Dist-Zilla-Plugin-GHFReadmeFromPod.svg?branch=master)](https://travis-ci.org/skaji/Dist-Zilla-Plugin-GHFReadmeFromPod)
-
 # NAME
 
 Dist::Zilla::Plugin::GHFReadmeFromPod - Create GitHub Flavored README.md from pod
