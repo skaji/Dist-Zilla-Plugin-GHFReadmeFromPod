@@ -40,7 +40,11 @@
       },
       "runtime" : {
          "requires" : {
-            "perl" : "5.008005"
+            "Dist::Zilla" : "6.000",
+            "Dist::Zilla::Plugin::ReadmeAnyFromPod" : "0",
+            "Moose" : "0",
+            "Pod::Markdown" : "0",
+            "perl" : "v5.14.0"
          }
       },
       "test" : {

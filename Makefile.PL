@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-use 5.008005;
+use 5.014000;
 
 use ExtUtils::MakeMaker;
 
@@ -14,9 +14,14 @@ my %WriteMakefileArgs = (
   },
   "DISTNAME" => "Dist-Zilla-Plugin-GHFReadmeFromPod",
   "LICENSE" => "perl",
-  "MIN_PERL_VERSION" => "5.008005",
+  "MIN_PERL_VERSION" => "5.014000",
   "NAME" => "Dist::Zilla::Plugin::GHFReadmeFromPod",
-  "PREREQ_PM" => {},
+  "PREREQ_PM" => {
+    "Dist::Zilla" => "6.000",
+    "Dist::Zilla::Plugin::ReadmeAnyFromPod" => 0,
+    "Moose" => 0,
+    "Pod::Markdown" => 0
+  },
   "TEST_REQUIRES" => {
     "Test::More" => "0.98"
   },
@@ -28,6 +33,10 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
+  "Dist::Zilla" => "6.000",
+  "Dist::Zilla::Plugin::ReadmeAnyFromPod" => 0,
+  "Moose" => 0,
+  "Pod::Markdown" => 0,
   "Test::More" => "0.98"
 );
 
